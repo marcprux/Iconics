@@ -6,6 +6,9 @@ on:
     tags:
       - '*'
   pull_request:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   build:
